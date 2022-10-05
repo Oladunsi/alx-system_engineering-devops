@@ -1,2 +1,7 @@
-#!/bin/bash
-pwd
+Script started on 2022-10-05 08:27:24-07:00 [TERM="xterm" TTY="/dev/pts/20" COLUMNS="190" LINES="57"]
+# 
+# pwd
+/alx-system_engineering-devops/0x00-shell_basics
+# exit
+
+Script done on 2022-10-05 08:28:03-07:00 [COMMAND_EXIT_CODE="0"]
