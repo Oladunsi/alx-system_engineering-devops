@@ -1,10 +1,10 @@
 # creating a file using puppet in /tmp 
 
 file { 'tmp/school':
-  ensure  => 'file',
-  content => 'I love puppet',
-  group   => 'www-data',
+  ensure  => 'present',
+  path    => '/tmp/school',
   mode    => '0744',
   owner   => 'www-data',
-  path    => '/tmp/school',
+  group   => 'www-data',
+  content => 'I love puppet',
 }
