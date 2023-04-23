@@ -1,6 +1,6 @@
-# creating a file using puppet in /tmp 
+# creating a file in /tmp 
 
-file { 'tmp/school':
+file { '/tmp/school':
   ensure  => 'present',
   path    => '/tmp/school',
   mode    => '0744',
