@@ -1,7 +1,7 @@
-# creating a file using puppet
+# creating a file using puppet in /tmp 
 
-file { 'school':
-  ensure  => 'present',
+file { 'tmp/school':
+  ensure  => 'file',
   content => 'I love puppet',
   group   => 'www-data',
   mode    => '0744',
