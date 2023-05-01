@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # config server options
 
-Host 54.196.50.191
-    IndentifyFile ~/.ssh/school
-    PasswordAuthecation no
+Host ubuntu@100.25.215.216
+    IdentityFile ~/.ssh/school
+    PasswordAuthentication no
