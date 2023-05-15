@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#- Requirements to install nginx
+#- install nginx
+#- Listen to port 80
+#- Return a page with text Hello World!
+#- curl uses the GET request
+
+sudo apt-get update
+sudo apt-get install -y nginx
+
+# create a directory named html
+mkdir /var/www/html
+# create a file name index in htmd dir
+touch /var/www/html/index.html
+
+sudo service nginx start
+echo "Hello World!" |sudo tee /var/www/html/index.html
