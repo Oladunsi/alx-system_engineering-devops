@@ -1,8 +1,16 @@
 #!/usr/bin/python3
-"""program to receive and display api get calls
+
+"""
    @author: Oke Oladunsi Samuel
    CreatedOn: 5/23/2023
 
+   Python script to export data in the CSV format.
+
+   Requirements:
+
+   Records all tasks that are owned by this employee
+   Format must be: "USER_ID","USERNAME","TASK_COMPLETED_STATUS","TASK_TITLE"
+   File name must be: USER_ID.csv
 """
 
 from requests import get
@@ -20,9 +28,6 @@ if __name__ == "__main__":
     url = 'https://jsonplaceholder.typicode.com/users/{}/todos'.format(user_id)
     response = get(url)
     todo_list_info = response.json()
-    tasks = {}
-    tmp = []
-    c = 0
     with open('{}.csv'.format(user_id), 'w') as file:
         for task in todo_list_info:
             file.write('"{}","{}","{}","{}"\n'
