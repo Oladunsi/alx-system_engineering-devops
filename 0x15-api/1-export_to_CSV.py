@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """program to receive and display api get calls
    @author: Oke Oladunsi Samuel
    CreatedOn: 5/23/2023
