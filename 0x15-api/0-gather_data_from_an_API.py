@@ -11,8 +11,8 @@ from sys import argv
 
 
 if __name__ == "__main__":
-    user_id = argv[1]    
-    # getting user personal info   
+    user_id = argv[1]
+    # getting user personal info
     url = 'https://jsonplaceholder.typicode.com/users/{}'.format(user_id)
     response = get(url)
     Employee_name = response.json()['name']
@@ -25,12 +25,12 @@ if __name__ == "__main__":
     count = 0
 
     for task in todo_list_info:
-        if task['completed'] == True:
+        if task['completed']:
             count += 1
             completed_tasks.append(task['title'])
     # printing out the outcome
     print("Employee {} is done with tasks({}/{}):"
-            .format(Employee_name, count, len(todo_list_info)))
+          .format(Employee_name, count, len(todo_list_info)))
 
     for compl_task in completed_tasks:
         print("\t {}".format(compl_task))
